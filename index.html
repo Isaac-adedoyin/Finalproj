@@ -1,15 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JojoScentsation - Serene Smells</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link active">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#shop" class="nav-link">SHOP</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+    </nav>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Static Website for Brand</title>
-    </head>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">JOJOSCENTSATION</h1>
+            <div class="hero-subtitle-container">
+                <div class="hero-subtitle-box brown">
+                    <h2>SERENE</h2>
+                </div>
+                <div class="hero-subtitle-box cream">
+                    <h2>SMELLS</h2>
+                </div>
+            </div>
+            <button class="hero-button" onclick="scrollToSection('about')">WELCOME</button>
+        </div>
+    </section>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-left">
+                <div class="logo-container">
+                    <img src="src/assets/fa3a3bad3c4db1d2c96a17f912b0dcbb877e018b.png" alt="JojoScentsation Logo" class="logo">
+                </div>
+                <div class="video-container">
+                    <h3>Jojoscentsation</h3>
+                    <p>Serene Smells</p>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/YmVQdYlvCv0"
+                            title="JojoScentsation Video"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-right">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/jojoscentsation?igsh=MW9zOHJuZmRraGpneg==" target="_blank" class="social-icon instagram">IG</a>
+                    <a href="https://www.tiktok.com/@jojoscentsation?_t=ZS-90RQMs3axx1&_r=1" target="_blank" class="social-icon tiktok">TT</a>
+                    <a href="https://wa.me/+2347043038203" target="_blank" class="social-icon whatsapp">WA</a>
+                    <a href="mailto:Olajumokejoy1025@gmail.com" class="social-icon email">@</a>
+                </div>
+                
+                <h2>About us</h2>
+                
+                <p class="about-text">
+                    JoJoScentsation is a perfume store based in Abuja, Nigeria. Our mission is to provide luxury fragrances at affordable prices, making every customer feel elegant and confident. We specialize in authentic undiluted oil perfumes, designer fragrances, and everyday body mists. With a passion for quality and customer satisfaction, we also provide reliable delivery services across Abuja and nationwide.
+                </p>
+                
+                <div class="delivery-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Location</th>
+                                <th>Fee</th>
+                                <th>Days</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Within Abuja</td>
+                                <td>1,500</td>
+                                <td>1-2 DAYS</td>
+                            </tr>
+                            <tr>
+                                <td>Outside Abuja</td>
+                                <td>3,000</td>
+                                <td>3-5 DAYS</td>
+                            </tr>
+                            <tr>
+                                <td>National Wide Express</td>
+                                <td>5,000</td>
+                                <td>3-1 WEEK</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="shop-container">
+            <h2>Our Collection</h2>
+            <p class="shop-description">
+                Discover our curated selection of authentic fragrances, from undiluted oil perfumes to designer scents
+            </p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1719175936556-dbd05e415913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBwZXJmdW1lJTIwYm90dGxlfGVufDF8fHx8MTc1OTI1NDgzNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Signature Oil Perfume">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Oil Perfume</p>
+                        <h3>Signature Oil Perfume</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1624798956425-ef88fc12b540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNpZ25lciUyMGZyYWdyYW5jZXxlbnwxfHx8fDE3NTkyOTg4NzR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Designer Fragrance Collection">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Designer Fragrance</p>
+                        <h3>Designer Fragrance Collection</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1655500061669-1f8ac338a319?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJmdW1lJTIwY29sbGVjdGlvbiUyMGVsZWdhbnR8ZW58MXx8fHwxNzU5MjQ4ODQ4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Elite Perfume Set">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Premium Collection</p>
+                        <h3>Elite Perfume Set</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585250815365-a90a469677c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib2R5JTIwbWlzdCUyMGJvdHRsZXxlbnwxfHx8fDE3NTkyOTg4NzV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Body Mist Collection">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Body Mist</p>
+                        <h3>Body Mist Collection</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603720832922-b2db800821bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlc3NlbnRpYWwlMjBvaWwlMjBwZXJmdW1lfGVufDF8fHx8MTc1OTI5ODg3NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Essential Oil Perfume">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Oil Perfume</p>
+                        <h3>Essential Oil Perfume</h3>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1752432067207-811a64eda434?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmFncmFuY2UlMjBzcHJheSUyMGJvdHRsZXxlbnwxfHx8fDE3NTkyOTg4NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Luxury Spray Fragrance">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Designer Fragrance</p>
+                        <h3>Luxury Spray Fragrance</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-overlay"></div>
+        <div class="contact-container">
+            <h2>CONTACT US</h2>
+            <p class="contact-description">
+                We'd love to hear from you! Whether you want to place an order or ask a question, reach out to us.
+            </p>
+            
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male"> Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="contact-method" value="email"> Email
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="contact-method" value="phone"> Phone
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            
+            <div class="contact-social">
+                <a href="https://www.instagram.com/jojoscentsation?igsh=MW9zOHJuZmRraGpneg==" target="_blank" class="social-icon instagram">IG</a>
+                <a href="https://www.tiktok.com/@jojoscentsation?_t=ZS-90RQMs3axx1&_r=1" target="_blank" class="social-icon tiktok">TT</a>
+                <a href="https://wa.me/+2347043038203" target="_blank" class="social-icon whatsapp">WA</a>
+                <a href="mailto:Olajumokejoy1025@gmail.com" class="social-icon email">@</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

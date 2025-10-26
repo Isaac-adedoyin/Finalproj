@@ -1,98 +1,43 @@
+# JojoScentsation - Simple HTML Website
 
-  # Jojo Scent Website
+A simple, clean website for JojoScentsation perfume store built with HTML, CSS, and JavaScript.
 
-A modern, responsive e-commerce website for fragrance products built with React, TypeScript, and Vite.
+## Files Structure
+```
+├── index.html          # Main HTML file
+├── styles.css          # All styling
+├── script.js           # JavaScript functionality
+└── src/
+    └── assets/         # Images and media files
+```
+
+## How to Use
+1. Open `index.html` in any web browser
+2. The website works offline and doesn't require any server setup
+3. All images are included in the `src/assets/` folder
 
 ## Features
+- Responsive design (works on mobile and desktop)
+- Smooth scrolling navigation
+- Contact form with validation
+- Product gallery with hover effects
+- Social media links
+- Delivery pricing table
 
-- Modern, responsive design
-- Component-based architecture
-- Rich UI components using Shadcn/ui
-- Shopping functionality
-- About and Contact pages
-- Mobile-friendly navigation
+## Sections
+- **Home**: Hero section with company branding
+- **About**: Company information and delivery details
+- **Shop**: Product showcase gallery
+- **Contact**: Contact form and social media links
 
-## Tech Stack
+## Customization
+- Edit `index.html` to change content and text
+- Modify `styles.css` to change colors, fonts, and styling
+- Update `script.js` for additional functionality
+- Replace images in `src/assets/` folder
 
-- React
-- TypeScript
-- Vite
-- Shadcn/ui Components
-- CSS Modules
+## Browser Support
+Works in all modern browsers including Chrome, Firefox, Safari, and Edge.
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (version 16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-```
-
-2. Navigate to the project directory:
-```bash
-cd "Jojo Scent Website"
-```
-
-3. Install dependencies:
-```bash
-npm install
-# or
-yarn
-```
-
-4. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-The application will be available at `http://localhost:5173`
-
-## Project Structure
-
-```
-src/
-├── components/     # React components
-│   ├── ui/        # Reusable UI components
-│   └── figma/     # Figma-exported components
-├── assets/        # Static assets
-├── styles/        # Global styles
-└── guidelines/    # Project guidelines
-```
-
-## Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Shadcn/ui for the component library
-- All contributors who have helped with the project
-  
+## School Project Notes
+This is a simplified version converted from a React application to basic HTML/CSS/JS for educational purposes. Perfect for learning web development fundamentals!
