@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
         
-        // Update active navigation link based on scroll position
+    
         updateActiveNavLink();
     });
     
-    // Add click event listeners to navigation links
+
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function scrollToSection(sectionId) {
     const element = document.getElementById(sectionId);
     if (element) {
-        const offsetTop = element.offsetTop - 80; // Account for fixed navbar
+        const offsetTop = element.offsetTop - 80; 
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
@@ -91,31 +91,11 @@ function handleSubmit(event) {
         return;
     }
     
-    // For a school project, we'll just show a success message
-    // In a real application, you would send this data to a server
     alert('Thank you for your message! We will get back to you soon.');
     
-    // Reset the form
+    // Form Reset
     event.target.reset();
     
-    // You could also implement actual form submission here:
-    /*
-    fetch('https://formspree.io/f/xeorpbop', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert('Thank you for your message! We will get back to you soon.');
-        event.target.reset();
-    })
-    .catch(error => {
-        alert('Sorry, there was an error sending your message. Please try again.');
-    });
-    */
 }
 
 // Smooth scrolling for older browsers
